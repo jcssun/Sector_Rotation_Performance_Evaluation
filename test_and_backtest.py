@@ -12,10 +12,6 @@ warnings.filterwarnings('ignore')
 
 def backtest(weight, industry_type, start_date, end_date, frequency, fee, file_name, sheet):
 
-    if datetime.now().date() > datetime.strptime('20240101', '%Y%m%d').date():
-        print('已过期，自动退出文件')
-        sys.exit()
-
     start_date = datetime.strptime(start_date, '%Y%m%d')
     end_date = datetime.strptime(end_date, '%Y%m%d')
 
