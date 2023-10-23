@@ -14,12 +14,11 @@ from test_and_backtest import backtest
 if __name__ == '__main__':
 
     '''   
-    设置手续费，策略频率，行业类型,回测区间
-    frequency频率（'D'：日频，'W'：周频，'M'：月频）
-    industry_type行业类型（1：中信一级，2：中信二级，3：申万一级，4：申万二级）
+    frequency（'D': Daily，'W': Weekly，'M': Monthly）
+    industry_type行业类型（1：CITIC LVL1，2：CITIC LVL2，3：SWHY LVL1，4：SWHY LVL2）
     '''
 
-    # 测试样例
+    # Example
     file_name = '中信一级行业 CON_NP'
     sheet = '周频'
     frequency = 'W'
